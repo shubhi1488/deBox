@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="./home.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="shortcut icon" href="https://image.shutterstock.com/image-vector/autobiography-dark-emblem-retro-vector-600w-1431275924.jpg" type="image/x-icon" />
+
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">BeMotivated</span>
+                    <!-- <span class="profession">Web developer</span> -->
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./about.html">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./project.html">
+                            <i class='bx bx-info-circle icon'></i>
+                            <span class="text nav-text">Autobiographies</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./userstory.html">
+                            <i class='bx bxs-user icon'></i>
+                            <span class="text nav-text">User</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./contact.html">
+                            <i class='bx bx-phone icon'></i>
+                            <span class="text nav-text">Contact Us</span>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li> -->
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <!-- <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li> -->
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+    <div class="whole">
+        <div class="layout">
+            <div class="extra">
+                <img src="https://i.pinimg.com/736x/97/30/25/9730256a5ca0b9d520fdd3977e3cdf30--life-s-your-life.jpg" alt="live life">
+            </div>
+            <div class="banner">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP3rgOrtQkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+        </div>
+        <div class="text">
+            <p>
+                Many of life's failures are people who did not realize how close they were to success when they gave up.<br>
+                So it always becomes a lesson to heard other life stories and learn from their experience. <br>
+                Here our amazing website give an outstanding chance to all people who wants to stay motivated and want to achieve their goals in life.<br>
+                People who write their autobiographies usually have an interesting story to tell about the trials and tribulations of their own lives.<br> 
+                Every life has a beginning, middle, and an end, and how one has lived one's life should be of great interest to those who are still at the beginning.<br>
+                Autobiography always helps to people to stay motivated and always help in people's life to achieve something. <br>
+                
+                I like to walk so life for me is a walk to complete a beautiful journey. Enjoying the journey us more important than completing it. <br>
+                 <br>
+    
+            </p>
+        </div>
+    
+    </div>
+    
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+    <script src="./home.js"></script>
+    <center>
+        <a href="./index.html"class="previous">Previous</a>  
+
+    </center>
+
+</body>
+</html>

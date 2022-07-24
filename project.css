@@ -1,0 +1,123 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 2rem;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 119, 181, 0.8),
+      rgba(0, 0, 0, 0.85)
+    );
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .container .card {
+    background-color: rgba(255, 255, 255, 0.726);
+    color: black;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 1px 2px 9px 1px black;
+  }
+  
+  .container .card .person {
+    display: grid;
+    text-align: center;
+    gap: 0.75rem;
+  }
+  
+  .container .card .person img {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+  }
+  
+  .container .card .person h1 {
+    font-size: 1.75rem;
+  }
+  
+  .container .card .content {
+    font-size: 1rem;
+    letter-spacing: 0.125em;
+  }
+  
+  .container .card .content .readmore {
+    font-weight: 600;
+    text-decoration: none;
+    color: blue;
+  }
+  
+  .container .card .content .readmore:hover {
+    color: blueviolet;
+  }
+  .menu{
+    background: rgb(50, 50, 50);
+    text-align: center;
+}
+.menu ul{
+    list-style: none;
+    display: inline-flex;
+}
+.menu ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fa{
+    margin-right: 5px;
+
+}
+.menu ul li:hover,.active{
+    background-color: goldenrod;
+    width: max-content;
+
+}
+.dropdown1{
+    display: none;
+}
+.menu ul li:hover .dropdown1{
+    display: block;
+    position: absolute;
+    background: rgb(50, 50, 50);
+    margin-top: 15px;
+    margin-left: -30px;
+}
+.menu ul li:hover .dropdown1 ul{
+    display: block;
+
+}
+.menu ul li:hover .dropdown1 ul li{
+    background: transparent;
+    border-bottom: 1px solid goldenrod;
+    width: 150px;
+
+}
+.menu ul li:hover .dropdown1 ul li a:hover{
+    color: goldenrod;
+}
+.dropdown2{
+    display: none;
+}
+.select:hover .dropdown2{
+    display: block;
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    margin-left: 130px;
+    margin-top: -50px;
+}
+.fa-plus{
+    color: white;
+    float: right;
+}

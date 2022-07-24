@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+/* background:rgba(0,0,0) linear-gradient(to right,rgb(195,20,50),rgb(36,11,54)); */
+background: silver;
+
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper{
+  margin-top: 10%;
+}
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.team1{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.team2{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+
+
+.wrapper h1{
+ 
+ opacity:.6;
+  
+ font-family: 'Allura', cursive;
+  font-size: 55px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #81c644;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.menu{
+  background: rgb(50, 50, 50);
+  text-align: center;
+}
+.menu ul{
+  list-style: none;
+  display: inline-flex;
+}
+.menu ul li{
+  width: 150px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fa{
+  margin-right: 5px;
+
+}
+.menu ul li:hover,.active{
+  background-color: goldenrod;
+  width: max-content;
+
+}
+.dropdown1{
+  display: none;
+}
+.menu ul li:hover .dropdown1{
+  display: block;
+  position: absolute;
+  background: rgb(50, 50, 50);
+  margin-top: 15px;
+  margin-left: -30px;
+}
+.menu ul li:hover .dropdown1 ul{
+  display: block;
+
+}
+.menu ul li:hover .dropdown1 ul li{
+  background: transparent;
+  border-bottom: 1px solid goldenrod;
+  width: 150px;
+
+}
+.menu ul li:hover .dropdown1 ul li a:hover{
+  color: goldenrod;
+}
+.dropdown2{
+  display: none;
+}
+.select:hover .dropdown2{
+  display: block;
+  position: absolute;
+  background-color: rgb(50, 50, 50);
+  margin-left: 130px;
+  margin-top: -50px;
+}
+.fa-plus{
+  color: white;
+  float: right;
+}
+
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img
+{
+  
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  adjust:auto;
+  border-radius:50%;
+}
+a {
+  text-decoration:none;
+  display:inline-block;
+  padding:8px 16px;
+}
+a:hover 
+{
+  background-color:#add;
+  color:black;
+}

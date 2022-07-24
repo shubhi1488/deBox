@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: skyblue;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* float: right; */
+}
+.content{
+    display: flex;
+}
+.content .details{
+    margin-right: 140px;
+}
+.content .container{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    padding:20px;
+    margin-left: 200px;
+    /* float: right; */
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* float: right; */
+
+}
+h2{
+    text-align: center;
+    padding: 20px;
+}
+.content .container .form{
+    margin: 30px;
+}
+input,#textBox{
+    width: 300px;
+    padding: 10px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+.btn{
+    width: 70px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: skyblue;
+    color: blue;
+    border: none;
+    border-radius: 30px;
+}
+.details{
+
+}
+.details h2,address,p{
+    float: left;
+    margin-right: 60px;
+    font-family: cursive;
+}
+.menu{
+    background: rgb(50, 50, 50);
+    text-align: center;
+}
+.menu ul{
+    list-style: none;
+    display: inline-flex;
+}
+.menu ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fa{
+    margin-right: 5px;
+
+}
+.menu ul li:hover,.active{
+    background-color: goldenrod;
+    width: max-content;
+
+}
+.dropdown1{
+    display: none;
+}
+.menu ul li:hover .dropdown1{
+    display: block;
+    position: absolute;
+    background: rgb(50, 50, 50);
+    margin-top: 15px;
+    margin-left: -30px;
+}
+.menu ul li:hover .dropdown1 ul{
+    display: block;
+
+}
+.menu ul li:hover .dropdown1 ul li{
+    background: transparent;
+    border-bottom: 1px solid goldenrod;
+    width: 150px;
+
+}
+.menu ul li:hover .dropdown1 ul li a:hover{
+    color: goldenrod;
+}
+.dropdown2{
+    display: none;
+}
+.select:hover .dropdown2{
+    display: block;
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    margin-left: 130px;
+    margin-top: -50px;
+}
